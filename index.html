@@ -36,7 +36,26 @@
       <a style="color: rebeccapurple" href="#contact">Contact</a>
     </nav>
   </header>
+    <button class="chat-toggle-btn" id="chat-toggle-btn">🤖 </button>
+</button>
 
+
+    <div class="chat-container hidden" id="chat-container">
+        <div class="chat-header">
+            <h2>FAQ Chatbot</h2>
+            <div class="chat-controls">
+                <button id="minimize-btn">−</button>
+                <button id="close-btn">×</button>
+            </div>
+        </div>
+        <div class="chat-body" id="chat-body"></div>
+        <div class="chat-footer">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    
   <!-- Home Section -->
   <section id="home" class="home-section">
     <video autoplay muted loop id="background-video" playsinline>
