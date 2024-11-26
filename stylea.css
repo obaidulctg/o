@@ -1,16 +1,11 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f9;
-}
+
 
 /* Chat toggle button */
 .chat-toggle-btn {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0078d7;
+    bottom: 30px;
+    right: 30px;
+    background-color: papayawhip;
     color: white;
     border: none;
     border-radius: 50%;
@@ -29,12 +24,12 @@ body {
     right: 20px;
     width: 350px;
     max-height: 500px;
-    background: #ffffff;
+    background: #333;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
-    z-index: 999;
+    z-index: 1001;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -45,7 +40,7 @@ body {
 }
 
 .chat-header {
-    background: #0078d7;
+    background: darkcyan;
     color: white;
     padding: 15px;
     display: flex;
@@ -57,11 +52,12 @@ body {
 .chat-header h2 {
     margin: 0;
     font-size: 18px;
+    color: gold;
 }
 
 .chat-controls button {
     background: transparent;
-    color: white;
+    color: lightcoral;
     border: none;
     font-size: 18px;
     cursor: pointer;
@@ -72,13 +68,14 @@ body {
     flex: 1;
     padding: 15px;
     overflow-y: auto;
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
 }
 
 .chat-footer {
     display: flex;
     padding: 10px;
+    background-color: darkcyan;
 }
 
 .chat-footer input {
@@ -87,21 +84,26 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     outline: none;
+    min-width: 235px;
+    max-width: 500px;
+    min-height: 20px;
+    max-height: 30px;
 }
 
 .chat-footer button {
     margin-left: 10px;
     padding: 10px 15px;
-    background: #0078d7;
+    background: yellowgreen;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     transition: background 0.3s;
+    position: right;
 }
 
 .chat-footer button:hover {
-    background: #005bb5;
+    background: lightseagreen;
 }
 
 .message {
@@ -116,14 +118,14 @@ body {
 }
 
 .message.user .text {
-    background: #0078d7;
+    background: lightseagreen;
     color: white;
     margin-left: 10px;
 }
 
 .message.bot .text {
-    background: #f1f1f1;
-    color: #333;
+    background: antiquewhite;
+    color: black;
     margin-right: 10px;
 }
 
@@ -154,7 +156,7 @@ body {
 .typing-indicator .dot {
     width: 8px;
     height: 8px;
-    background-color: #bbb;
+    background-color: navajowhite;
     border-radius: 50%;
     margin: 0 4px;
     animation: blink 1.4s infinite;
@@ -197,7 +199,7 @@ body {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #0078d7;
+    background-color: yellowgreen;
     color: white;
     border: none;
     border-radius: 50%;
@@ -212,5 +214,6 @@ body {
 }
 
 .chat-toggle-btn:hover {
-    background-color: #005bb5;
-}
+    background-color: darkslategrey;
+    }
+    
