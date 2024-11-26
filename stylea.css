@@ -197,8 +197,8 @@
 /* Chat toggle button with bounce effect */
 .chat-toggle-btn {
     position: fixed;
-    bottom: 30px;
-    right: 40px;
+    bottom: 40px;
+    right: 50px;
     background-color: yellowgreen;
     color: white;
     border: none;
